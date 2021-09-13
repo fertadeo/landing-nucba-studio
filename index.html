@@ -11,25 +11,29 @@
   <title> Julia Grover Estudio </title>
 </head>
 <body>
+
+<header>
   <nav>
     <div class="navbar">
       <div class="logo">
-        <img src="./img/Julia Grover Fotografia - Logotipo Final WEB PNG.png" alt="">
+          <img src="./img/Julia Grover Fotografia - Logotipo Final WEB PNG.png" alt="">
       </div>
+
       <div class="menu">
         <ul>
-          <li>Home</li>
-          <li>Galería</li>
-          <li>Acerca de mí</li>
-          <li>Contacto</li>
+          <li><a href="#home">Home</a> </li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#about"> Acerca de mí</a> </li>
+          <li><a href="#contact"> Contacto </a> </li>
         </ul>
       </div>
     </div>
   </nav>
+</header>
 
 
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="home" class="carousel slide" data-ride="carousel">
+      
        <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -37,10 +41,10 @@
        </ol>
       <div class="carousel-inner">
          <div class="carousel-item active">
-           <img class="d-block w-100 h-auto" src="img/DSC_1951.jpg" alt="First slide">
+           <img class="d-block w-100 h-auto" src="img/slide1.jpg" alt="First slide">
          </div>
          <div class="carousel-item">
-           <img class="d-block w-100 h-auto" src="img/DSC_1964.jpg" alt="Second slide">
+           <img class="d-block w-100 h-auto" src="img/slide3.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
            <img class="d-block w-100 h-auto" src="img/DSC_2051.jpg" alt="Third slide">
@@ -57,48 +61,75 @@
      </div>
  
   <section> 
-<!-- cada card lleva a un html distinto? O son simplemente informativos... -->
-      <div class="card-container">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+
+      <div class="card-container" id="galeria">
+        <h2> Conocé nuestras propuestas! </h2>
+        <div class="card-row">
+
+          <div class="card"> 
+            <img src="./img/footer2-600.jpg" alt="">
+          </div>
+          <div class="card"> 
+            <img src="img/card2.jpg" alt="">
+          </div>
+          <div class="card">
+            <img src="img/card3.jpg" alt="">
+          </div>
+          <div class="card"> 
+            <img src="img/card4.jpg" alt="">
+          </div>
+
+
+        </div>
+        <div class="button"> 
+          <button>Ver más</button>
+        </div>
+      
+        
       </div>
 
+      
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="about-text">
-      <h4>
-        Bienvenidos! 
-        
+       <h3> 
+        Acerca de mí
+       </h3>
+
+
+       <h4>
         Me llamo Julia Grover
-
         Soy de Cosquín, Córdoba, Argentina y soy fotógrafa profesional. 
-
-       </p>
-
-
-       <h5>
         La fotografía me gusta desde que era muy chica. La descubrí gracias a mi hermano mayor que en aquel momento estudiaba fotografía.
         Cuando me regalaron mi primera cámara, me enamoré y no paraba de sacar fotos a todo. 
         
         Hace un par de años cumplí el sueño de tener mi estudio fotográfico.
-       </p>
+       </h4>
 
-       <p> Mis frases favoritas: 
-        
+       <p>
         «¿Cuál de mis fotos es mi fotografía preferida? Una que voy a hacer mañana.» (Imogen Cunningham) 
-        
-        «Si sabes esperar la gente se olvidará de tu cámara y entonces su alma saldrá a la luz.» (Steve McCurry)</p>
+       </p>
+       <p>
+        «Si sabes esperar la gente se olvidará de tu cámara y entonces su alma saldrá a la luz.» (Steve McCurry)
+       </p>
+            
+           
+      </div>
+    <div class="about-image">
+      <img src="img/about.jpg" alt="">
     </div>
-    <div class="about-image"></div>
-    <img src="img/WEB/about.jpeg" alt="">
+    
   </section>
 
 
  <footer>
-  
+  <div class="footer" id="contact">
+   <div class="text"> <p>Te gustaría saber más? Buscanos en Redes Sociales </p>  </div>
+   <div class="footer-media"> <img src="img/fb-footer.png" alt=""></div>
+   <div class="footer-media"> <img src="img/ig-footer.png" alt=""></div>
+
+  </div>
  
 
  </footer>
